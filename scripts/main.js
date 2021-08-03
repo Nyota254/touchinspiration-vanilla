@@ -23,25 +23,25 @@ $(document).ready(() => {
 
                             <!-- Name input -->
                             <div class="form-outline mb-4">
-                              <input type="text" id="profilename${data[i].id}" class="form-control" required />
+                              <input type="text" id="profilename${data[i].id}" class="form-control" value="${data[i].name}" />
                               <label class="form-label" for="profilename${data[i].id}">Name</label>
                             </div>
 
                             <!-- Occupation -->
                             <div class="form-outline mb-4">
-                              <input type="text" id="profile-occupation${data[i].id}" class="form-control" required/>
+                              <input type="text" id="profile-occupation${data[i].id}" class="form-control" value="${data[i].occupation}"/>
                               <label class="form-label" for="profile-occupation${data[i].id}">Occupation</label>
                             </div>
                           
                             <!-- Email input -->
                             <div class="form-outline mb-4">
-                              <input type="email" id="profile-email${data[i].id}" class="form-control" required/>
+                              <input type="email" id="profile-email${data[i].id}" class="form-control" value="${data[i].email}"/>
                               <label class="form-label" for="profile-email${data[i].id}">Email address</label>
                             </div>
                           
                             <!-- Message input -->
                             <div class="form-outline mb-4">
-                              <textarea class="form-control" id="profile-bio${data[i].id}" rows="4" required></textarea>
+                              <textarea class="form-control" id="profile-bio${data[i].id}" rows="4">${data[i].bio}</textarea>
                               <label class="form-label" for="profile-bio${data[i].id}">Bio</label>
                             </div>
                           
